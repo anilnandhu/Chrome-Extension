@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Appply",
+    "version": "1.0",
+    "description": "Auto-fills job applications",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "downloads"
+    ],
+    "host_permissions": [
+        "https://*.linkedin.com/*"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "details.html",
+                "details.js",
+                "popup.html",
+                "popup.js",
+                "pdf.min.js",
+                "pdf.worker.min.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

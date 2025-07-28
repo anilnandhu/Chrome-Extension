@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Details</title>
+</head>
+<body>
+    <h2>Enter Your Information</h2>
+    <form id="userForm">
+        <label>Name: <input type="text" id="name" required></label><br>
+        <label>Email: <input type="email" id="email" required></label><br>
+        <label>Phone: <input type="text" id="phone" required></label><br>
+        <label>Experience: <input type="text" id="experience" required></label><br>
+        <label>Resume: <input type="file" id="resume" accept=".pdf" required></label><br>
+        <div id="resumeStatus"></div>
+        <button type="submit">Submit</button>
+        <div id="status"></div>
+    </form>
+    <script src="pdf.min.js"></script>
+<script src="details.js"></script>
+</body>
+</html>
